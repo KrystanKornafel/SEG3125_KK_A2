@@ -1,6 +1,13 @@
 import './ContactUs.css'
 import { Link } from 'react-router-dom';
 
+
+//======================== Contact Us Page ====================================================================================
+// Name: Krystan Kornafel
+// Assignment: SEG3125 Assignment 2
+// Description: This is the React UI for the Contact Us page, that will allow the user to quickly find the contact details for the salon.
+
+
 function ContactUs() {
   return (
      //Reference used for background colour: https://www.w3schools.com/cssref/pr_background-color.php

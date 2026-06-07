@@ -1,5 +1,11 @@
 import './Analytics.css'
 
+//======================== Analytics Page ====================================================================================
+// Name: Krystan Kornafel
+// Assignment: SEG3125 Assignment 2
+// Description: This will be the React UI page in the future to display the analytics of the website. For now, stay tuned!
+
+
 function Analytics() {
   return (
     <div className="container mt-5">

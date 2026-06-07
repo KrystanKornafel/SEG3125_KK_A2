@@ -10,7 +10,18 @@ import ContactUs from './services/ContactUs';
 // import FinalPgApply from './services/FinalPgApply';
 // import FinalPgAppointment from './services/FinalPgAppointment';
  import ServicesPage from './services/ServicesPage';
+ import FinalPgApply from './services/FinalPgApply';
+ import FinalPgAppointment from './services/FinalPgAppointment';
 //import { Link } from "react-router-dom";
+
+
+//======================== Main Page for the Service Site -> Hair Salon ===================================================
+// Name: Krystan Kornafel
+// Assignment: SEG3125 Assignment 2
+// Description: This is the main React page for the Hair Salon service site that will be used to display all the required information. There are several sub-pages, including the About page with information about the company owner,
+//the Apply Now page which contains a form to allow users to apply for a job at the salon, the Book Appointment page that allows you
+//to select a service and a date for an appointment, a page with contact details, and lastly a page with a list of all the services that will be provided to the customers.
+
 
 
 function Home()  {
@@ -123,4 +134,4 @@ function Hairdresser() {
 
 export default Hairdresser;
 
-export { Home, About, ServicesPage, ApplyNow, BookAppointment, ContactUs };
+export { Home, About, ServicesPage, ApplyNow, FinalPgApply, BookAppointment, FinalPgAppointment, ContactUs };

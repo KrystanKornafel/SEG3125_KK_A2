@@ -1,5 +1,11 @@
 import './MemoryGame.css'
 
+//======================== Memory Game Page ====================================================================================
+// Name: Krystan Kornafel
+// Assignment: SEG3125 Assignment 2
+// Description: This will be used in the future to generate a UI for a game application. Stay tuned!
+
+
 function MemoryGame() {
   return (
     <div className="container mt-5">

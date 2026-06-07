@@ -3,11 +3,10 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 //import { Routes, Route, Link } from "react-router-dom";
 import './App.css'
 //import Hairdresser from '../public/Hairdresser';
-import Hairdresser, { Home as HairdresserHome, About,  ServicesPage, ApplyNow, BookAppointment, ContactUs } from '../public/Hairdresser'
-
-
-
+import Hairdresser, { Home as HairdresserHome, About, ServicesPage, ApplyNow, FinalPgApply, BookAppointment, FinalPgAppointment, ContactUs } from '../public/Hairdresser'
 //import Hairdresser, { Home as HairdresserHome, About as HairdresserAbout, ApplyNow as HairdresserApplyNow, BookAppointment as HairdresserBookAppointment, ContactUs as HairdresserContactUs } from '../public/Hairdresser';
+
+//======================== Main UI -> Portfolio Page ===================================================
 // Name: Krystan Kornafel
 // Assignment: SEG3125 Assignment 2
 // Description: This is the main React page that will be used to display all the required information. There are 4 cards that can be clicked on. Each one will redirect the user to the specified page.
@@ -186,7 +185,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
 
-
+            {/* References for the Hairdresser page and subpages */}
             <Route path="/hairdresser" element={<Hairdresser />}>
               <Route index element={<HairdresserHome />} />
               <Route path="about" element={<About />} />
@@ -194,10 +193,17 @@ function App() {
               <Route path="bookAppointment" element={<BookAppointment />} />
               <Route path="contactUs" element={<ContactUs />} />
               <Route path="ServicesPage" element={<ServicesPage />} />
+              {/* <Route path="FinalPgAppointment" element={<FinalPgAppointment />} />
+              <Route path="FinalPgApply" element={<FinalPgApply />} /> */}
             </Route>
 
-            <Route path="/analytics" element={<Analytics />} />
-            <Route path="/e-commerce" element={<ECommerceStore />} />
+            {/* References added to the subpages connected to the ApplyNow and BookAppointment forms */}
+            <Route path="/FinalPgAppointment" element={<FinalPgAppointment />} />
+            <Route path="/FinalPgApply" element={<FinalPgApply />} />
+
+            {/* The remainder of the card links are referenced here */}
+            <Route path="/analytics" element={<Analytics />} />     
+            <Route path="/e-commerce" element={<ECommerceStore />} />       
             <Route path="/memory-game" element={<MemoryGame />} />
 
           </Routes>
