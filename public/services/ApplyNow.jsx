@@ -37,6 +37,7 @@ function ApplyNow() {
                 {/* Textbox here for input */}
                 <br/><p style={{ color: '#000000', fontSize: "20px", fontWeight: 700, textAlign: "left" }}>Tell us about yourself:</p><br/>
                 {/* Textbox here for input */}
+                {/* Reference used to redirect to another page: https://www.geeksforgeeks.org/reactjs/how-to-redirect-to-another-page-in-reactjs/ */}
                 {/* Add the submit button here, that will redirect to the FinalPgApply page, (using React Link to route to the page). */}
                 {/* Reference used when redirecting to another page using the submit button: https://www.geeksforgeeks.org/reactjs/how-to-redirect-to-another-page-in-reactjs/ */}
                 <br/><button className="btn btn-primary">Submit</button>
