@@ -3,6 +3,7 @@ Description: This code was written by Krystan Kornafel for Assignment 2. The pur
 My work can be found in the following folders:
 1. /public
 2. /public/services
+3. /src
 
 To run in VS Code, simply run the following commands:
 1. npm install 
