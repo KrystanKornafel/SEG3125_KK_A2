@@ -1,9 +1,9 @@
 Description: This code was written by Krystan Kornafel for Assignment 2. The purpose of this assignment was to design and implement a website UI for a service site, which in this case is a hair salon called "Chique Hairstylez". 
 
 To run in VS Code, simply run the following commands:
-npm install 
-npm create vite
-npm run dev
+1. npm install 
+2. npm create vite
+3. npm run dev
 
 
 
