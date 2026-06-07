@@ -1,5 +1,11 @@
 import './ECommerceStore.css'
 
+//======================== ECommerStore Page ====================================================================================
+// Name: Krystan Kornafel
+// Assignment: SEG3125 Assignment 2
+// Description: This will be used in the future to advertise a fictional ECommerceStore. For now, stay tuned!
+
+
 function ECommerceStore() {
   return (
     <div className="container mt-5">

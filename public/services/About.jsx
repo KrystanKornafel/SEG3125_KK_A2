@@ -5,6 +5,13 @@ import './About.css'
 import { Link } from 'react-router-dom';
 
 
+//======================== About Page ====================================================================================
+// Name: Krystan Kornafel
+// Assignment: SEG3125 Assignment 2
+// Description: This page provides the user with a bit of a background into the owner of the company. Additionally, the user
+// is also provided with a link to the list of services and contact details for the company. 
+
+
 function About() {
   return (
      //Reference used for background colour: https://www.w3schools.com/cssref/pr_background-color.php

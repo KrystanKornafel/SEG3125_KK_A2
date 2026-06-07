@@ -1,5 +1,12 @@
 import './ServicesPage.css'
 
+//======================== Services Page ====================================================================================
+// Name: Krystan Kornafel
+// Assignment: SEG3125 Assignment 2
+// Description: This React UI will be used to display the services that the salon has to offer. This list can be access on the 
+//other pages listed in the Navbar from the Hairdresser page, namely: Home, About, and Contact Us. 
+
+
 function ServicesPage() {
   return (
     // Top portion of the page, with the logo and title
