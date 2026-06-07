@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 //import { useParams } from 'react-router'; //I think this is for inputs from user
 //import { Routes, Route, Link } from "react-router-dom";
 import './App.css'
-import Hairdresser from '../public/Hairdresser';
-
+//import Hairdresser from '../public/Hairdresser';
+import Hairdresser, { Home as HairdresserHome, About,  ServicesPage, ApplyNow, BookAppointment, ContactUs } from '../public/Hairdresser'
 
 
 
@@ -109,31 +109,31 @@ function Home()  {
 //         </main>
 //       </div>
 //   );
-// }
-function HairdresserHome() { 
-    return ( <div className="container mt-4"><h1>Home page display!</h1>
-    <Link to="/hairdresser" className="list-group-item list-group-item-action">Home</Link></div>);
- }
+// // }
+// function HairdresserHome() { 
+//     return ( <div className="container mt-4"><h1>Home page display!</h1>
+//     <Link to="/hairdresser" className="list-group-item list-group-item-action">Home</Link></div>);
+//  }
 
-function HairdresserAbout() { 
-    return ( <div className="container mt-4"><h1>About us</h1>
-    <Link to="/hairdresser/about" className="list-group-item list-group-item-action">We are family owned!</Link></div>);
- }
+// function HairdresserAbout() { 
+//     return ( <div className="container mt-4"><h1>About us</h1>
+//     <Link to="/hairdresser/about" className="list-group-item list-group-item-action">We are family owned!</Link></div>);
+//  }
 
- function HairdresserApplyNow() { 
-    return ( <div className="container mt-4"><h1>We are Hiring!</h1>
-    <Link to="/hairdresser/applyNow" className="list-group-item list-group-item-action">We are Hiring!</Link></div>);
- }
+//  function HairdresserApplyNow() { 
+//     return ( <div className="container mt-4"><h1>Apply Now!</h1>
+//     <Link to="/hairdresser/applyNow" className="list-group-item list-group-item-action">We're Hiring!</Link></div>);
+//  }
 
-function HairdresserBookAppointment() { 
-    return ( <div className="container mt-4"><h1>Book an Appointment</h1>
-    <Link to="/hairdresser/bookAppointment" className="list-group-item list-group-item-action">Book an Appointment</Link></div>);
- }
+// function HairdresserBookAppointment() { 
+//     return ( <div className="container mt-4"><h1>Book an Appointment</h1>
+//     <Link to="/hairdresser/bookAppointment" className="list-group-item list-group-item-action">Book an Appointment</Link></div>);
+//  }
 
- function HairdresserContactUs() { 
-    return ( <div className="container mt-4"><h1>Contact Us</h1>
-    <Link to="/hairdresser/contactUs" className="list-group-item list-group-item-action">Contact Us</Link></div>);
- }
+//  function HairdresserContactUs() { 
+//     return ( <div className="container mt-4"><h1>Contact Us</h1>
+//     <Link to="/hairdresser/contactUs" className="list-group-item list-group-item-action">Contact Us</Link></div>);
+//  }
 
 
 ///======================= Other Main UI Pages ===================================================
@@ -189,10 +189,11 @@ function App() {
 
             <Route path="/hairdresser" element={<Hairdresser />}>
               <Route index element={<HairdresserHome />} />
-              <Route path="about" element={<HairdresserAbout />} />
-              <Route path="applyNow" element={<HairdresserApplyNow />} /> 
-              <Route path="bookAppointment" element={<HairdresserBookAppointment />} />
-              <Route path="contactUs" element={<HairdresserContactUs />} />
+              <Route path="about" element={<About />} />
+              <Route path="applyNow" element={<ApplyNow />} /> 
+              <Route path="bookAppointment" element={<BookAppointment />} />
+              <Route path="contactUs" element={<ContactUs />} />
+              <Route path="ServicesPage" element={<ServicesPage />} />
             </Route>
 
             <Route path="/analytics" element={<Analytics />} />

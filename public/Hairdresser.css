@@ -181,4 +181,20 @@
     right: 0;
     border-right-color: var(--border);
   }
+
+
+  /* Reference for changing the background colour: https://www.w3schools.com/css/css_background.asp */
+  body {
+  background-color: #c473ca;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Reference for creating a centered div: https://www.c-sharpcorner.com/blogs/how-to-make-a-div-center-in-screen-in-react-js */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 }

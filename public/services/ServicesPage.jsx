@@ -2,16 +2,89 @@ import './ServicesPage.css'
 
 function ServicesPage() {
   return (
-    <div className="container mt-5">
+    // Top portion of the page, with the logo and title
+        <div style={{ backgroundColor: '#c473ca' }}>
+      {/* First section of the Home page */}
+      <div className="container mt-5">
         <div className="mb-5">
-          <div class="border rounded p-3 mb-4" style="background-color: #a5b6f1; border: 10px solid #215689;">
-            <h1>See Our List of Services</h1>
-            <div class="border rounded p-3 mb-4" style="background-color: #d9e4f2;">
+          {/* <div className="border rounded p-3 mb-4" style={{ backgroundColor: '#c473ca', border: '10px solid #215689' }}> */}
+            <div>
+              <img src="/Logo.png" className="float-start me-3 rounded" style={{ width: "175px" }} alt="logo" />
+              <div style={{ backgroundColor: '#4FE5F5'}}><br/><h1>Chique Hairstylez</h1><br/></div>
+            </div>  
+            {/* <div className="border rounded p-3 mb-4" style={{ backgroundColor: '#f2cdda' }}>
               <p>We will have content coming soon!</p>
+            </div> */}
+          </div>
+        {/* </div> */}
+      </div> 
+
+      {/* Middle section of the page with all the images and descriptions */}
+      <div className="container mt-5">
+        {/* Reference for center alignment: https://mdbootstrap.com/docs/react/layout/vertical-alignment/ */}
+        <div className="mb-5 d-flex justify-content-center align-items-center">
+          <div style={{ display: "flex", alignItems: "center", gap: "2px" }}>
+            <img src="/80s_hairStyling.png" className="float-left ms-3 rounded" style={{ width: "300px" }} alt="logo" />
+            <div style={{ backgroundColor: '#4FE5F5', width: "600px", height: "300px"}}><br/>
+              {/* Reference for styling: https://www.pluralsight.com/resources/blog/guides/react-inline-styling */}
+              <p style={{ color: '#8F0A91', fontSize: "20px", fontWeight: 700 }}><br/>We specialize in Retro Hairstyles but we also have some modern ones too. As our specialists today!</p><br/>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div className="container mt-5">
+        {/* Reference for center alignment: https://mdbootstrap.com/docs/react/layout/vertical-alignment/ */}
+        <div className="mb-5 d-flex justify-content-center align-items-center">
+          <div style={{ display: "flex", alignItems: "center", gap: "2px" }}>
+            <img src="/HairColouring.png" className="float-left ms-3 rounded" style={{ width: "300px" }} alt="logo" />
+            <div style={{ backgroundColor: '#4FE5F5', width: "600px", height: "300px"}}><br/>
+              {/* Reference for styling: https://www.pluralsight.com/resources/blog/guides/react-inline-styling */}
+              <p style={{ color: '#8F0A91', fontSize: "20px", fontWeight: 700 }}><br/>Want colourful hair? No problem! We have you covered!</p><br/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       
+      <div className="container mt-5">
+        <div className="mb-5  d-flex justify-content-center align-items-center">
+          <div style={{ display: "flex", alignItems: "center", gap: "2px" }}>
+            <img src="/HairCuts.png" className="float-left ms-3 rounded" style={{ width: "300px" }} alt="logo" />
+            <div style={{ backgroundColor: '#4FE5F5', width: "600px", height: "300px"}}><br/>
+              {/* Reference for styling: https://www.pluralsight.com/resources/blog/guides/react-inline-styling */}
+              <p style={{ color: '#4B40BC', fontSize: "20px", fontWeight: 700 }}><br/>We specialize in various types of haircuts, including layers, trims, etc.!</p><br/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="container mt-5">
+        <div className="mb-5  d-flex justify-content-center align-items-center">
+          <div style={{ display: "flex", alignItems: "center", gap: "2px" }}>
+            <img src="/Perms.png" className="float-left ms-3 rounded" style={{ width: "300px" }} alt="logo" />
+            <div style={{ backgroundColor: '#4FE5F5', width: "600px", height: "300px"}}><br/>
+              {/* Reference for styling: https://www.pluralsight.com/resources/blog/guides/react-inline-styling */}
+              <p style={{ color: '#4B40BC', fontSize: "20px", fontWeight: 700 }}><br/>We have well-trained staff who specialize in perms to get you those retro curls you love!</p><br/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Third section: the footer */}
+      <div className="container mt-5">
+        <div className="mb-5">
+            <div>
+              <div style={{ backgroundColor: '#F46FF0'}}><br/>
+                <p style={{ color: '#000000', fontSize: "20px", fontWeight: 700 }}><br/>Designed by: Krystan Kornafel, a third year Software Engineering student.<br/></p>
+                <p style={{ color: '#690AE4', fontSize: "20px", fontWeight: 700 }}><br/>(613)-890-1234, ChiqueHairstylez@gmail.com<br/></p><br/><br/>
+              </div>
+            </div>  
+          </div>
+      </div>
+
     </div>
-    </div>
+
   );
 }
 
