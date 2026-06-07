@@ -1,5 +1,8 @@
 Description: This code was written by Krystan Kornafel for Assignment 2. The purpose of this assignment was to design and implement a website UI for a service site, which in this case is a hair salon called "Chique Hairstylez". 
 
+GenAI Acknowledgement: I used Copilot (Microsoft’s GenAI) and Gemini (Google’s GenAI) for the purpose of generating all the images for the Hairstyler website, such as "80s_hairStyling.png" and "Main_Pg_Backgrnd.png".
+
+
 My work can be found in the following folders:
 1. /public
 2. /public/services
