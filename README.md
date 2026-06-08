@@ -4,9 +4,9 @@ GenAI Acknowledgement: I used Copilot (Microsoftâ€™s GenAI) and Gemini (Googleâ€
 
 
 My work can be found in the following folders:
-1. /public
-2. /public/services
-3. /src
+1. /public -> This is where all the card UIs are stored, such as Hairdresser, MemoryGame, EccommerceStore, and Analytics.
+2. /public/services -> This is where all the subpages for the Hairdresser UI are stored/accessed.
+3. /src -> This is where the main UI is stored/accessed (App.jsx, main.jsx).
 
 To run in VS Code, simply run the following commands:
 1. npm install 
