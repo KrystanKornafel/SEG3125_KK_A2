@@ -1,8 +1,10 @@
 import './BookAppointment.css'
 import { useNavigate } from 'react-router-dom';
-//import DatePicker from "react-datepicker";
-//import dayjs from 'dayjs';
-//import Dropdown from "react-bootstrap/Dropdown";
+//import Form from 'react-bootstrap/Form';
+//For the calendar
+// import { useState } from "react";
+// import DatePicker from "react-datepicker";
+// import "react-datepicker/dist/react-datepicker.css";
 
 //======================== Book Appointment Page ====================================================================================
 // Name: Krystan Kornafel
@@ -12,6 +14,18 @@ import { useNavigate } from 'react-router-dom';
 //confirm the appointment. Once the form is submitted (indicated by the user click in the submit button), the user will then 
 //be redirected to another page (FinalPgAppointment.jsx) which will indicate to the user that their appointment request has
 //been received successfully, and that someone will contact them soon to confirm the appointment. 
+
+
+// Reference for the following function "DatePicker": https://stackoverflow.com/questions/37560863/react-datepicker-bootstrap-up-to-date
+function DatePicker() {
+  return (
+    <div className="mb-3">
+      <label htmlFor="dateInput" className="form-label">Choose Date</label>
+      <input type="date" className="form-control" id="dateInput" />
+    </div>
+  );
+}
+
 
 
 
@@ -78,11 +92,22 @@ function BookAppointment() {
                     </select>
                   </div>
                   <br/><p style={{ color: '#000000', fontSize: "20px", fontWeight: 700, textAlign: "left" }}>Enter the preferred appointment date</p><br/>
-                  {/* For the calendar component, I used this as a reference: https://mui.com/x/react-date-pickers/date-calendar/ */}
-                  {/* <DatePicker
-                    selected={this.state.startDate}
-                    onChange={this.handleChange}
-                  /> */}
+                  {/* For the calendar component, I used this as a reference: https://demo.mobiscroll.com/react/calendar/week-select */}
+                     {/* <DatePicker
+                          controls={['calendar', 'timegrid']}
+                          touchUi={true}
+                      /> */}
+                      {/* Reference used to make this calendar: https://coreui.io/bootstrap/docs/forms/date-picker/ */}
+                  {/* <div class="row">
+                    <div class="col-sm-6 col-lg-5 mb-3 mb-sm-0">
+                      <div data-coreui-locale="en-US" data-coreui-toggle="date-picker"></div>
+                    </div>
+                    <div class="col-sm-6 col-lg-5">
+                      <div data-coreui-date="2023/03/15" data-coreui-locale="en-US" data-coreui-toggle="date-picker"></div>
+                    </div>
+                  </div> */}
+                  <DatePicker />
+                                              
               </form>
 
 
