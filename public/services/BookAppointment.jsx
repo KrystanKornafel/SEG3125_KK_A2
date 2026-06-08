@@ -1,6 +1,8 @@
 import './BookAppointment.css'
 import { useNavigate } from 'react-router-dom';
-
+//import DatePicker from "react-datepicker";
+//import dayjs from 'dayjs';
+//import Dropdown from "react-bootstrap/Dropdown";
 
 //======================== Book Appointment Page ====================================================================================
 // Name: Krystan Kornafel
@@ -45,6 +47,45 @@ function BookAppointment() {
             <div style={{ backgroundColor: '#5BE5CE', width: "1200px", height: "700px"}}><br/>
               {/* Reference for styling: https://www.pluralsight.com/resources/blog/guides/react-inline-styling */}
               <p style={{ color: '#8F0CB0', fontSize: "20px", fontWeight: 700 }}><br/>Book Appointment!</p><br/>
+
+              {/* ================= FORM HERE ============================================================================ */}
+
+              {/* Reference for taking in form inputs: https://www.w3schools.com/bootstrap/bootstrap_forms_inputs2.asp */}
+              <form>
+                  {/* Reference for styling: https://www.pluralsight.com/resources/blog/guides/react-inline-styling */}
+                  <br/><p style={{ color: '#000000', fontSize: "20px", fontWeight: 700, textAlign: "left" }}>Enter your name</p><br/>
+                  <div class="input-group" style={{width: '400px' }}>
+                    {/* IF you have time, adjust colour of boxes to: #D9D9D9 */}
+                    <br/><input id="name" type="text" class="form-control" name="name" placeholder="First Last"/>
+                  </div>
+                  <br/><p style={{ color: '#000000', fontSize: "20px", fontWeight: 700, textAlign: "left" }}>Enter your phone number</p><br/>
+                  <div class="input-group" style={{width: '400px' }}>
+                    {/* IF you have time, adjust colour of boxes to: #D9D9D9 */}
+                    <br/><input id="phone" type="text" class="form-control" name="phone" placeholder="(613)-123-4567"/>
+                  </div>
+                  <br/><p style={{ color: '#000000', fontSize: "20px", fontWeight: 700, textAlign: "left" }}>Enter the service type</p><br/>
+                  {/* For the dropdown menu, here is the reference I used: https://www.geeksforgeeks.org/reactjs/react-bootstrap-dropdowns-menu-dividers/ */}
+                  {/* Dropdown, additional reference: https://www.w3schools.com/bootstrap/bootstrap_dropdowns.asp */}
+                  {/* Reference for select: https://react.dev/reference/react-dom/components/select */}
+                  {/* These "options" can be used as a parameter later to pass to the system to actually add the correct type of service to the database, under that user's name. */}
+                  <div style={{ display: "flex", alignItems: "left", gap: "20px" }}>
+                    <select style={{ textAlign: 'left', width: '300px' }}>
+                      <option value="doNothing">Select</option>
+                      <option value="retroHairStyle">Retro Hairstyle</option>
+                      <option value="hairColouring">Hair Colouring</option>
+                      <option value="haircut">Haircut</option>
+                      <option value="perm">Perm</option>
+                    </select>
+                  </div>
+                  <br/><p style={{ color: '#000000', fontSize: "20px", fontWeight: 700, textAlign: "left" }}>Enter the preferred appointment date</p><br/>
+                  {/* For the calendar component, I used this as a reference: https://mui.com/x/react-date-pickers/date-calendar/ */}
+                  {/* <DatePicker
+                    selected={this.state.startDate}
+                    onChange={this.handleChange}
+                  /> */}
+              </form>
+
+
               {/* Reference used to redirect to another page: https://www.geeksforgeeks.org/reactjs/how-to-redirect-to-another-page-in-reactjs/ */}
                 {/* Add the submit button here, that will redirect to the FinalPgAppointment page, (using React Link to route to the page). */}
                 {/* Reference used when redirecting to another page using the submit button: https://www.geeksforgeeks.org/reactjs/how-to-redirect-to-another-page-in-reactjs/ */}

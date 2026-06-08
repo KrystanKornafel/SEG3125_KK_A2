@@ -51,6 +51,7 @@ function ApplyNow() {
                   {/* Reference for styling: https://www.pluralsight.com/resources/blog/guides/react-inline-styling */}
                   <br/><p style={{ color: '#000000', fontSize: "20px", fontWeight: 700, textAlign: "left" }}>What is your name?</p><br/>
                   <div class="input-group">
+                    {/* IF you have time, adjust colour of boxes to: #D9D9D9 */}
                     <br/><input id="name" type="text" class="form-control" name="name" placeholder="First Last"/>
                   </div>
                   <br/><p style={{ color: '#000000', fontSize: "20px", fontWeight: 700, textAlign: "left" }}>Phone Number:</p><br/>
