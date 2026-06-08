@@ -13,6 +13,11 @@ To run in VS Code, simply run the following commands:
 2. npm create vite
 3. npm run dev
 
+Aside:
+You may also need to install the following packages to make this application work:
+1. npm install react-bootstrap
+2. npm install react-datepicker
+
 
 
 Additional Notes:
