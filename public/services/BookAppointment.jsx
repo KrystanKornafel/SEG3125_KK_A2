@@ -58,7 +58,7 @@ function BookAppointment() {
       <div className="container mt-5">
         <div className="mb-5">
           <div style={{ display: "flex", alignItems: "center", gap: "2px" }}>
-            <div style={{ backgroundColor: '#5BE5CE', width: "1200px", height: "700px"}}><br/>
+            <div style={{ backgroundColor: '#5BE5CE', width: "1200px", height: "800px"}}><br/>
               {/* Reference for styling: https://www.pluralsight.com/resources/blog/guides/react-inline-styling */}
               <p style={{ color: '#8F0CB0', fontSize: "20px", fontWeight: 700 }}><br/>Book Appointment!</p><br/>
 
